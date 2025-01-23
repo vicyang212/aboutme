@@ -41,7 +41,7 @@ body {
     background-color: #fff;
     z-index: 999;
     opacity: 1;
-    transition: all 0.5s ;
+    transition: all 0.5s;
 
 
     .loader {
@@ -52,7 +52,7 @@ body {
         border-bottom: 5px solid $mainColor;
         border-left: 5px solid $imgColor;
         border-right: 5px solid $imgColor;
-        animation: waiting 2s linear infinite ;
+        animation: waiting 2s linear infinite;
     }
 }
 
@@ -958,7 +958,7 @@ body {
                     font-size: 0.9rem;
 
                     &::after {
-                        top: 50%;
+                        top: -30%;
                         transform: translateY(-50%);
                         right: 0;
                         left: auto;
@@ -976,7 +976,10 @@ body {
                     top: 50% !important;
                     left: 0%;
                     transform: translate(-50%, -55%);
-                    animation: showup_pic01_m 1.2s forwards 1.3s;
+
+                    &.animation {
+                        animation: showup_pic01_m 1.2s forwards 1.3s;
+                    }
                 }
 
                 #pic02 {
@@ -993,7 +996,11 @@ body {
                     top: 50% !important;
                     left: 50%;
                     transform: translate(-50%, -55%);
-                    animation: showup_pic03_m 1.2s forwards 1.3s;
+
+                    &.animation {
+                        animation: showup_pic03_m 1.2s forwards 1.3s;
+                    }
+
                 }
             }
         }
